@@ -10,4 +10,11 @@
 #  movie_id   :integer
 #
 class Character < ApplicationRecord
+  belongs_to :movie
+
+  def movie
+    # Replace `movie` with the name of the association between Character and Movie
+    self.movie
+  end
 end
+
